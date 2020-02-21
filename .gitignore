@@ -1,0 +1,4 @@
+node_modules
+example/*.bundle.js
+coverage
+.nyc_output
