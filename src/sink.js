@@ -14,10 +14,10 @@ module.exports = (id, options) => {
           return { done }
         }
 
-        return { value: { value } }
+        return { value }
       } catch (err) {
         close()
-        return { value: { error: { message: err.message, stack: err.stack } }, done: true }
+        throw err
       }
     }, options)
 
